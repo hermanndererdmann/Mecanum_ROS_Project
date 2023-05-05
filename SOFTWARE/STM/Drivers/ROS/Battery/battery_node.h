@@ -9,9 +9,9 @@
 #define ROS_BATTERY_BATTERY_NODE_H_
 
 
-
-
 #include "main.h"
+
+
 
 void get_voltage();
 int cell_count();
