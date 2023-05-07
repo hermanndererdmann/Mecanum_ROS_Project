@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
-#include "coines.h"
+//#include "coines.h"
 #include "bmi088_mm.h"
 #include "common.h"
 
@@ -94,7 +94,7 @@ static void init_bmi08(struct bmi08_dev *bmi08dev)
     else
     {
         printf("BMI08 initialization failure!\n");
-        exit(COINES_E_FAILURE);
+//        exit(COINES_E_FAILURE);
     }
 
     if (rslt == BMI08_OK)
@@ -176,7 +176,7 @@ static void configure_accel_gyro_data_ready_interrupts(struct bmi08_dev *bmi08de
     if (rslt != BMI08_OK)
     {
         printf("Failure in interrupt configurations \n");
-        exit(COINES_E_FAILURE);
+//        exit(COINES_E_FAILURE);
     }
 }
 
@@ -291,7 +291,7 @@ int main(void)
         }
     }
 
-    bmi08_coines_deinit();
+//    bmi08_coines_deinit();
 
     return rslt;
 }

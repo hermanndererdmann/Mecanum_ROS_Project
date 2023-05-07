@@ -9,9 +9,38 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
+-include Drivers/i2c_stm/src/subdir.mk
 -include Drivers/STM32F4xx_HAL_Driver/Src/subdir.mk
+-include Drivers/ROS/Status/subdir.mk
+-include Drivers/ROS/Motor\ Driver/subdir.mk
+-include Drivers/ROS/LED/subdir.mk
+-include Drivers/ROS/Battery/subdir.mk
+-include Drivers/BMI088/examples/bmi08x/read_synchronized_data_mcu/subdir.mk
+-include Drivers/BMI088/examples/bmi08x/read_sensor_data/subdir.mk
+-include Drivers/BMI088/examples/bmi08x/polling_streaming_pc/subdir.mk
+-include Drivers/BMI088/examples/bmi08x/interrupt_streaming_pc/subdir.mk
+-include Drivers/BMI088/examples/bmi08x/gyro_fifo_watermark/subdir.mk
+-include Drivers/BMI088/examples/bmi08x/gyro_fifo_full/subdir.mk
+-include Drivers/BMI088/examples/bmi08x/common/subdir.mk
+-include Drivers/BMI088/examples/bmi08x/accel_fifo_watermark/subdir.mk
+-include Drivers/BMI088/examples/bmi08x/accel_fifo_full/subdir.mk
+-include Drivers/BMI088/examples/bmi088_mm/read_sensor_data/subdir.mk
+-include Drivers/BMI088/examples/bmi088_mm/orientation/subdir.mk
+-include Drivers/BMI088/examples/bmi088_mm/no_motion/subdir.mk
+-include Drivers/BMI088/examples/bmi088_mm/low_g/subdir.mk
+-include Drivers/BMI088/examples/bmi088_mm/high_g/subdir.mk
+-include Drivers/BMI088/examples/bmi088_mm/gyro_fifo_watermark/subdir.mk
+-include Drivers/BMI088/examples/bmi088_mm/gyro_fifo_full/subdir.mk
+-include Drivers/BMI088/examples/bmi088_mm/data_sync_mcu/subdir.mk
+-include Drivers/BMI088/examples/bmi088_mm/common/subdir.mk
+-include Drivers/BMI088/examples/bmi088_mm/axis_remap/subdir.mk
+-include Drivers/BMI088/examples/bmi088_mm/any_motion/subdir.mk
+-include Drivers/BMI088/examples/bmi088_mm/accel_fifo_watermark/subdir.mk
+-include Drivers/BMI088/examples/bmi088_mm/accel_fifo_full/subdir.mk
+-include Drivers/BMI088/subdir.mk
 -include Core/Startup/subdir.mk
 -include Core/Src/subdir.mk
+-include Core/Inc/subdir.mk
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)
