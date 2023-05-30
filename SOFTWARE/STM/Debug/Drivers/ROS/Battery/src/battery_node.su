@@ -1,0 +1,4 @@
+../Drivers/ROS/Battery/src/battery_node.cpp:42:6:void get_cell_voltage()	8	static
+../Drivers/ROS/Battery/src/battery_node.cpp:61:5:int cell_count()	16	static
+../Drivers/ROS/Battery/src/battery_node.cpp:85:6:void get_voltage()	16	static
+../Drivers/ROS/Battery/src/battery_node.cpp:98:6:void get_percentage()	104	static

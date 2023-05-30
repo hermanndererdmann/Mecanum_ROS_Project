@@ -34,33 +34,12 @@ SUBDIRS := \
 Core/Inc \
 Core/Src \
 Core/Startup \
-Drivers/BMI088 \
-Drivers/BMI088/examples/bmi088_mm/accel_fifo_full \
-Drivers/BMI088/examples/bmi088_mm/accel_fifo_watermark \
-Drivers/BMI088/examples/bmi088_mm/any_motion \
-Drivers/BMI088/examples/bmi088_mm/axis_remap \
-Drivers/BMI088/examples/bmi088_mm/common \
-Drivers/BMI088/examples/bmi088_mm/data_sync_mcu \
-Drivers/BMI088/examples/bmi088_mm/gyro_fifo_full \
-Drivers/BMI088/examples/bmi088_mm/gyro_fifo_watermark \
-Drivers/BMI088/examples/bmi088_mm/high_g \
-Drivers/BMI088/examples/bmi088_mm/low_g \
-Drivers/BMI088/examples/bmi088_mm/no_motion \
-Drivers/BMI088/examples/bmi088_mm/orientation \
-Drivers/BMI088/examples/bmi088_mm/read_sensor_data \
-Drivers/BMI088/examples/bmi08x/accel_fifo_full \
-Drivers/BMI088/examples/bmi08x/accel_fifo_watermark \
-Drivers/BMI088/examples/bmi08x/common \
-Drivers/BMI088/examples/bmi08x/gyro_fifo_full \
-Drivers/BMI088/examples/bmi08x/gyro_fifo_watermark \
-Drivers/BMI088/examples/bmi08x/interrupt_streaming_pc \
-Drivers/BMI088/examples/bmi08x/polling_streaming_pc \
-Drivers/BMI088/examples/bmi08x/read_sensor_data \
-Drivers/BMI088/examples/bmi08x/read_synchronized_data_mcu \
-Drivers/ROS/Battery \
-Drivers/ROS/LED \
-Drivers/ROS/Motor\ Driver \
-Drivers/ROS/Status \
+Drivers/BMI088/src \
+Drivers/ROS/Battery/src \
+Drivers/ROS/LED/src \
+Drivers/ROS/Motor\ Driver/src \
+Drivers/ROS/Orientation/src \
+Drivers/ROS/Status/src \
 Drivers/STM32F4xx_HAL_Driver/Src \
 Drivers/i2c_stm/src \
 
