@@ -8,19 +8,25 @@ C_SRCS += \
 ../Drivers/BMI088/bmi088_mma.c \
 ../Drivers/BMI088/bmi08a.c \
 ../Drivers/BMI088/bmi08g.c \
-../Drivers/BMI088/bmi08xa.c 
+../Drivers/BMI088/bmi08xa.c \
+../Drivers/BMI088/common.c \
+../Drivers/BMI088/read_sensor_data.c 
 
 C_DEPS += \
 ./Drivers/BMI088/bmi088_mma.d \
 ./Drivers/BMI088/bmi08a.d \
 ./Drivers/BMI088/bmi08g.d \
-./Drivers/BMI088/bmi08xa.d 
+./Drivers/BMI088/bmi08xa.d \
+./Drivers/BMI088/common.d \
+./Drivers/BMI088/read_sensor_data.d 
 
 OBJS += \
 ./Drivers/BMI088/bmi088_mma.o \
 ./Drivers/BMI088/bmi08a.o \
 ./Drivers/BMI088/bmi08g.o \
-./Drivers/BMI088/bmi08xa.o 
+./Drivers/BMI088/bmi08xa.o \
+./Drivers/BMI088/common.o \
+./Drivers/BMI088/read_sensor_data.o 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -30,7 +36,7 @@ Drivers/BMI088/%.o Drivers/BMI088/%.su: ../Drivers/BMI088/%.c Drivers/BMI088/sub
 clean: clean-Drivers-2f-BMI088
 
 clean-Drivers-2f-BMI088:
-	-$(RM) ./Drivers/BMI088/bmi088_mma.d ./Drivers/BMI088/bmi088_mma.o ./Drivers/BMI088/bmi088_mma.su ./Drivers/BMI088/bmi08a.d ./Drivers/BMI088/bmi08a.o ./Drivers/BMI088/bmi08a.su ./Drivers/BMI088/bmi08g.d ./Drivers/BMI088/bmi08g.o ./Drivers/BMI088/bmi08g.su ./Drivers/BMI088/bmi08xa.d ./Drivers/BMI088/bmi08xa.o ./Drivers/BMI088/bmi08xa.su
+	-$(RM) ./Drivers/BMI088/bmi088_mma.d ./Drivers/BMI088/bmi088_mma.o ./Drivers/BMI088/bmi088_mma.su ./Drivers/BMI088/bmi08a.d ./Drivers/BMI088/bmi08a.o ./Drivers/BMI088/bmi08a.su ./Drivers/BMI088/bmi08g.d ./Drivers/BMI088/bmi08g.o ./Drivers/BMI088/bmi08g.su ./Drivers/BMI088/bmi08xa.d ./Drivers/BMI088/bmi08xa.o ./Drivers/BMI088/bmi08xa.su ./Drivers/BMI088/common.d ./Drivers/BMI088/common.o ./Drivers/BMI088/common.su ./Drivers/BMI088/read_sensor_data.d ./Drivers/BMI088/read_sensor_data.o ./Drivers/BMI088/read_sensor_data.su
 
 .PHONY: clean-Drivers-2f-BMI088
 

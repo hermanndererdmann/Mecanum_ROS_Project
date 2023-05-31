@@ -1,0 +1,3 @@
+../Drivers/BMI088/src/common.c:29:21:bmi08_i2c_read	32	static
+../Drivers/BMI088/src/common.c:45:21:bmi08_i2c_write	32	static
+../Drivers/BMI088/src/common.c:88:6:bmi08_check_rslt	16	static
