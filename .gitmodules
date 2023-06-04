@@ -1,0 +1,3 @@
+[submodule "SOFTWARE/Rpi/ROS/ROSSERIAL"]
+	path = SOFTWARE/Rpi/ROS/ROSSERIAL
+	url = https://github.com/ros-drivers/rosserial
