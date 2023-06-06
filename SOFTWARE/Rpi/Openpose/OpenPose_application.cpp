@@ -160,7 +160,7 @@ int tutorialApiCpp()
         ros::NodeHandle nh;
 
         // Create a ROS subscriber for the image topic
-        ros::Subscriber imageSubscriber = nh.subscribe("/usb_cam/image_raw", 1, imageCallback);
+        ros::Subscriber imageSubscriber = nh.subscribe("camera/rgb/image_color", 1, imageCallback);
 
         // ROS spin
         ros::spin();
