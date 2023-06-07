@@ -20,7 +20,7 @@ In this manual for the OmniSeek robot, which was developed in the Mobile Robotic
 -	Custom PCB
 
 ## 1. get Rpi 4 ready
-
+Everything under this Topic is directly on the Raspberry Pi.
 1. install Ubuntu 20.04
 2. install ROS-Desktop: http://wiki.ros.org/noetic/Installation/Ubuntu
 3. install libfreenect: https://aibegins.net/2020/11/22/give-your-next-robot-3d-vision-kinect-v1-with-ros-noetic/
@@ -58,5 +58,8 @@ roslaunch ros_package_template ros_package_template.launch
 2. run the Project
 3. disconnect the cable from the pc
 4. plug the STM32 to the Raspberry PI
+
+## 3. get the pc ready
+1. 
 
 
