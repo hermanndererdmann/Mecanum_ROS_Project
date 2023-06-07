@@ -54,5 +54,9 @@ roslaunch ros_package_template ros_package_template.launch
 ```
 
 ## get the STM32 ready
-1. Open the Project /Mecanum_ROS_Project/Software/Rpi/ROS/
+1. open the Project /Mecanum_ROS_Project/Software/STM/ROS/
+2. run the Project
+3. disconnect the cable from the pc
+4. plug the STM32 to the Raspberry PI
+
 
