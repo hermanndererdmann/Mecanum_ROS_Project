@@ -60,6 +60,9 @@ roslaunch ros_package_template ros_package_template.launch
 4. plug the STM32 to the Raspberry PI
 
 ## 3. get the pc ready
-1. 
+The Setup for the video analysis on the pc:
+1. Install Ubuntu 20.04 (dualboot or directly)
+2. Install ROS
+3. 
 
 
