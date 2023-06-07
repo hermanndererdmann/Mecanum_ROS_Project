@@ -33,7 +33,11 @@ cd catkin_ws_ros
 ```
 mkdir src
 ```
-
+6. Projekt vom github downloaden:
+```
+git clone
+```
+8. 
  
 
 
