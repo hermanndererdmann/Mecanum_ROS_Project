@@ -72,8 +72,11 @@ rosrun teleop_bridge joy_twist_bridge.py
 ### start ps3joy
 ```
 roslaunch ps3joy ps3.launch
-``
-
+```
+### start freenect
+```
+roslaunch freenect_launch freenect.launch
+```
 
 
 ## 2. get the STM32 ready
