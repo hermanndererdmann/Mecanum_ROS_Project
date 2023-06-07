@@ -7,7 +7,7 @@ In dieser Bedienungsanleitung zum OmniSeek Roboter, welcher im Mobile Robotics P
 - Tim Germann				    tim.germann@stud.fhgr.ch
 - Yannick Kohler			  yannick.kohler@stud.fhgr.ch
 
-#Elektronik Komponenten Liste:
+# Elektronik Komponenten Liste:
 -	Microcontroller:	1x Raspberry Pi 4 4GB
 -	Microcontroller:	1x STM32F401RE
 -	IMU:			1x BMI088 
