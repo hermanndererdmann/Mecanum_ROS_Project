@@ -1,5 +1,5 @@
 # OmniSeek
-In dieser Bedienungsanleitung zum OmniSeek Roboter, welcher im Mobile Robotics Projekt 2, an der Fachhochschule Graubünden entwickelt wurde, finden Sie alle Informationen, um bei Ihnen zuhause das Programm über ROS zu installieren und starten. 
+In this manual for the OmniSeek robot, which was developed in the Mobile Robotics Project 2, at the University of Applied Sciences Grisogns, you will find all the information you need to install and start the program at your home via ROS.
 
 ## Ersteller:
 - Luca Bargetzi				  luca.bargetzi@stud.fhgr.ch
