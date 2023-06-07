@@ -23,7 +23,8 @@ In dieser Bedienungsanleitung zum OmniSeek Roboter, welcher im Mobile Robotics P
 2. ROS installieren
 3. catkin Worspace erstellen
 ```
-mkdir -p /catkin_ws_ros
+mkdir catkin_ws_ros/src
+cd catkin_ws_ros
 ```
 
 
