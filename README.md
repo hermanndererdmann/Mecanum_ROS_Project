@@ -52,6 +52,19 @@ source devel/setup.bash
 ```
 roslaunch ros_package_template ros_package_template.launch
 ```
+### start rosserial
+1. Find the right port
+```
+dmesg | grep tty
+```
+2. enable port (choose right port: ACMx)
+```
+sudo chmod a+rw /dev/tty/ACM0
+```
+3. Start the serial_node.py (choose right port: ACMx)
+```
+rosrun rosserial_python serial_node.py /dev/ttyACM0
+```
 
 ## 2. get the STM32 ready
 1. open the Project /Mecanum_ROS_Project/Software/STM/ROS/
