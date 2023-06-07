@@ -97,7 +97,7 @@ The Setup for the video analysis on the pc:
 2. install ROS-Desktop-Full: http://wiki.ros.org/noetic/Installation/Ubuntu
 3. setup ros slave on pc according to http://wiki.ros.org/ROS/Tutorials/MultipleMachines
 4. git clone https://github.com/hermanndererdmann/Mecanum_ROS_Project.git
-```
+
 4. create catkin workspace 
 ```
 mkdir catkin_ws_ros
@@ -126,12 +126,10 @@ mkdir openpose
 > ln -s ~/.../Mecanum_ROS_Project/Software/PC/openpose/ 
 ```
 ### compile and make according to https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/doc/installation/0_index.md#cmake-configuration
-### start Openpose script.py
+### start openpose script video_feedback.py
 ```
-roslaunch freenect_launch freenect.launch
+cd examples/tutorial_api_python/
+python3 video_feedback.py
 ```
-### start Openpose script.py
-```
-roslaunch freenect_launch freenect.launch
-```
+
 
