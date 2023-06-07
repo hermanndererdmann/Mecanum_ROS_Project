@@ -25,13 +25,15 @@ In dieser Bedienungsanleitung zum OmniSeek Roboter, welcher im Mobile Robotics P
 ```
 mkdir catkin_ws_ros
 ```
-4. in erstellten Ordner gehen
+4. In erstellten Ordner gehen
 ```
 cd catkin_ws_ros
 ```
+5. src Ordner erstellen:
 ```
 mkdir src
 ```
+
  
 
 
