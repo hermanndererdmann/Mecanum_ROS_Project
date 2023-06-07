@@ -17,6 +17,14 @@ In dieser Bedienungsanleitung zum OmniSeek Roboter, welcher im Mobile Robotics P
 -	3D-Kamera:		1x Xbox 360 Kinect
 -	Motor:			4x YFROBOT Motor
 
+# Aufsetzten vom Raspberry Pi 4
+
+1. Ubuntu 20.04 installieren
+2. ROS installieren
+3. catkin Worspace erstellen
+'''
+mkdir -p /catkin_ws_ros
+'''
 
 
 
