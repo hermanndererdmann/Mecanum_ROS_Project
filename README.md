@@ -52,7 +52,7 @@ source devel/setup.bash
 ```
 roslaunch ros_package_template ros_package_template.launch
 ```
-### start rosserial
+### start rosserial 
 1. Find the right port
 ```
 dmesg | grep tty
@@ -65,6 +65,13 @@ sudo chmod a+rw /dev/tty/ACM0
 ```
 rosrun rosserial_python serial_node.py /dev/ttyACM0
 ```
+### start teleop bridge
+```
+rosrun teleop_bridge joy_twist_bridge.py
+```
+
+
+
 
 ## 2. get the STM32 ready
 1. open the Project /Mecanum_ROS_Project/Software/STM/ROS/
