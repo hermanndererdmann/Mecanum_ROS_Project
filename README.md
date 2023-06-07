@@ -23,8 +23,9 @@ In this manual for the OmniSeek robot, which was developed in the Mobile Robotic
 Everything under this Topic should be done directly on the Raspberry Pi.
 1. install Ubuntu 20.04
 2. install ROS-Desktop: http://wiki.ros.org/noetic/Installation/Ubuntu
-3. install libfreenect: https://aibegins.net/2020/11/22/give-your-next-robot-3d-vision-kinect-v1-with-ros-noetic/
-4. clone git:
+3. setup ros master on rpi according to http://wiki.ros.org/ROS/Tutorials/MultipleMachines
+4. install libfreenect: https://aibegins.net/2020/11/22/give-your-next-robot-3d-vision-kinect-v1-with-ros-noetic/
+5. clone git:
 ```
 git clone https://github.com/hermanndererdmann/Mecanum_ROS_Project.git
 ```
@@ -93,16 +94,38 @@ roslaunch freenect_launch freenect.launch
 ## 3. get the pc ready
 The Setup for the video analysis on the pc:
 1. Install Ubuntu 20.04 (dualboot or directly)
-2. Install ROS
+2. install ROS-Desktop-Full: http://wiki.ros.org/noetic/Installation/Ubuntu
+3. setup ros slave on pc according to http://wiki.ros.org/ROS/Tutorials/MultipleMachines
+4. git clone https://github.com/hermanndererdmann/Mecanum_ROS_Project.git
+```
+4. create catkin workspace 
+```
+mkdir catkin_ws_ros
+cd catkin_ws_ros
+mkdir src
+cd src
+```
+5. Symlink contents from git-folder /Mecanum_ROS_Project/Software/Rpi/ROS into catkin_ws_ros/src
+```
+> ln -s ~/.../Mecanum_ROS_Project/Software/PC/ROS/ 
+```
+6. Build the package with: (while in the catkin_ws_ros folder)
+```
+cd ..
+catkin_make
+```
+7. Re-source your workspace setup:
+```
+source devel/setup.bash
 
-3. Run roscore in a seperate console
+
 ```
-roscore
+4. Openpose
 ```
-4. make
+mkdir openpose
+> ln -s ~/.../Mecanum_ROS_Project/Software/PC/openpose/ 
 ```
-make -j`nproc`
-```
+### compile and make according to https://github.com/CMU-Perceptual-Computing-Lab/openpose/blob/master/doc/installation/0_index.md#cmake-configuration
 ### start Openpose script.py
 ```
 roslaunch freenect_launch freenect.launch
