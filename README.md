@@ -35,5 +35,8 @@ cd catkin_ws_ros
 mkdir src
 cd src
 ```
-5. copy contents from git-folder Software/Rpi/ROS into catkin workspace
-6. 
+5. Symlink contents from git-folder Software/Rpi/ROS into catkin workspace/src
+```
+> ln -s ~/.../Mecanum_ROS_Project/Software/Rpi/ROS/ 
+```
+7. 
