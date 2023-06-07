@@ -8,14 +8,14 @@ In dieser Bedienungsanleitung zum OmniSeek Roboter, welcher im Mobile Robotics P
 - Yannick Kohler			  yannick.kohler@stud.fhgr.ch
 
 #Elektronik Komponenten Liste:
-•	Microcontroller:	1x Raspberry Pi 4 4GB
-•	Microcontroller:	1x STM32F401RE
-•	IMU:			1x BMI088 
-•	Magnetometer:	1x LIS3MDL
-•	Motorcontroller	2x Sparkfun Rob 14451
-•	Lidar:			1x RPLIDARA1
-•	3D-Kamera:		1x Xbox 360 Kinect
-•	Motor:			4x YFROBOT Motor
+-	Microcontroller:	1x Raspberry Pi 4 4GB
+-	Microcontroller:	1x STM32F401RE
+-	IMU:			1x BMI088 
+-	Magnetometer:	1x LIS3MDL
+-	Motorcontroller	2x Sparkfun Rob 14451
+-	Lidar:			1x RPLIDARA1
+-	3D-Kamera:		1x Xbox 360 Kinect
+-	Motor:			4x YFROBOT Motor
 
 
 
