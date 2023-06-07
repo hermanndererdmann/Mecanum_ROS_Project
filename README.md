@@ -39,4 +39,9 @@ cd src
 ```
 > ln -s ~/.../Mecanum_ROS_Project/Software/Rpi/ROS/ 
 ```
-7. 
+6. Build the package with (while in the catkin_ws_ros folder)
+```
+cd ..
+catkin_make
+```
+8.  
