@@ -24,11 +24,15 @@ In dieser Bedienungsanleitung zum OmniSeek Roboter, welcher im Mobile Robotics P
 3. catkin Worspace erstellen
 ```
 mkdir catkin_ws_ros
-cd catkin_ws_ros
-mkdir src
-
 ```
-4. 
+4. in erstellten Ordner gehen
+```
+cd catkin_ws_ros
+```
+```
+mkdir src
+```
+ 
 
 
 
