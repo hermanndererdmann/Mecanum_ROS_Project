@@ -35,7 +35,7 @@
 #ifndef ROS_STM32_HARDWARE_H_
 #define ROS_STM32_HARDWARE_H_
 
-#define STM32F3xx  // Change for your device
+#define STM32F4xx  // Change for your device
 #ifdef STM32F3xx
 #include "stm32f3xx_hal.h"
 #include "stm32f3xx_hal_uart.h"
@@ -97,16 +97,9 @@ class STM32Hardware {
         mutex = true;
 
         if(twind != tfind){
-          uint16_t len = 0;
-		  if(tfind < twind){
-			len = twind - tfind;
-			HAL_UART_Transmit_DMA(huart, &(tbuf[tfind]), len);
-		  }else{
-			len = tbuflen - tfind;
-			HAL_UART_Transmit_DMA(huart, &(tbuf[tfind]), len);
-			HAL_UART_Transmit_DMA(huart, &(tbuf), twind);
-		  }
-          tfind = twind;
+          uint16_t len = tfind < twind ? twind - tfind : tbuflen - tfind;
+          HAL_UART_Transmit_DMA(huart, &(tbuf[tfind]), len);
+          tfind = (tfind + len) & (tbuflen - 1);
         }
         mutex = false;
       }

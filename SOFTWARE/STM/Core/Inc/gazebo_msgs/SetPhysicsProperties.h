@@ -4,8 +4,8 @@
 #include <string.h>
 #include <stdlib.h>
 #include "ros/msg.h"
-#include "gazebo_msgs/ODEPhysics.h"
 #include "geometry_msgs/Vector3.h"
+#include "gazebo_msgs/ODEPhysics.h"
 
 namespace gazebo_msgs
 {
@@ -32,7 +32,7 @@ static const char SETPHYSICSPROPERTIES[] = "gazebo_msgs/SetPhysicsProperties";
     {
     }
 
-    virtual int serialize(unsigned char *outbuffer) const override
+    virtual int serialize(unsigned char *outbuffer) const
     {
       int offset = 0;
       union {
@@ -68,7 +68,7 @@ static const char SETPHYSICSPROPERTIES[] = "gazebo_msgs/SetPhysicsProperties";
       return offset;
     }
 
-    virtual int deserialize(unsigned char *inbuffer) override
+    virtual int deserialize(unsigned char *inbuffer)
     {
       int offset = 0;
       union {
@@ -106,8 +106,8 @@ static const char SETPHYSICSPROPERTIES[] = "gazebo_msgs/SetPhysicsProperties";
      return offset;
     }
 
-    virtual const char * getType() override { return SETPHYSICSPROPERTIES; };
-    virtual const char * getMD5() override { return "abd9f82732b52b92e9d6bb36e6a82452"; };
+    const char * getType(){ return SETPHYSICSPROPERTIES; };
+    const char * getMD5(){ return "abd9f82732b52b92e9d6bb36e6a82452"; };
 
   };
 
@@ -125,7 +125,7 @@ static const char SETPHYSICSPROPERTIES[] = "gazebo_msgs/SetPhysicsProperties";
     {
     }
 
-    virtual int serialize(unsigned char *outbuffer) const override
+    virtual int serialize(unsigned char *outbuffer) const
     {
       int offset = 0;
       union {
@@ -143,7 +143,7 @@ static const char SETPHYSICSPROPERTIES[] = "gazebo_msgs/SetPhysicsProperties";
       return offset;
     }
 
-    virtual int deserialize(unsigned char *inbuffer) override
+    virtual int deserialize(unsigned char *inbuffer)
     {
       int offset = 0;
       union {
@@ -166,8 +166,8 @@ static const char SETPHYSICSPROPERTIES[] = "gazebo_msgs/SetPhysicsProperties";
      return offset;
     }
 
-    virtual const char * getType() override { return SETPHYSICSPROPERTIES; };
-    virtual const char * getMD5() override { return "2ec6f3eff0161f4257b808b12bc830c2"; };
+    const char * getType(){ return SETPHYSICSPROPERTIES; };
+    const char * getMD5(){ return "2ec6f3eff0161f4257b808b12bc830c2"; };
 
   };
 

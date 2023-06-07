@@ -1,2 +1,0 @@
-../Drivers/i2c_stm/src/i2c_stm.c:14:5:i2cWrite	32	static
-../Drivers/i2c_stm/src/i2c_stm.c:31:5:i2cRead	24	static

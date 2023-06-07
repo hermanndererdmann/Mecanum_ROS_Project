@@ -1,3 +1,0 @@
-../Drivers/ROS/Status/src/status.cpp:11:6:bool get_userbutton()	8	static
-../Drivers/ROS/Status/src/status.cpp:22:6:void led_green(int)	16	static
-../Drivers/ROS/Status/src/status.cpp:30:6:void led_red(int)	16	static

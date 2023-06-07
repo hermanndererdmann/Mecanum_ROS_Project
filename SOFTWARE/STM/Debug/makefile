@@ -9,14 +9,7 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
--include Drivers/i2c_stm/src/subdir.mk
 -include Drivers/STM32F4xx_HAL_Driver/Src/subdir.mk
--include Drivers/ROS/Status/src/subdir.mk
--include Drivers/ROS/Orientation/src/subdir.mk
--include Drivers/ROS/Motor\ Driver/src/subdir.mk
--include Drivers/ROS/LED/src/subdir.mk
--include Drivers/ROS/Battery/src/subdir.mk
--include Drivers/BMI088/src/subdir.mk
 -include Core/Startup/subdir.mk
 -include Core/Src/subdir.mk
 -include Core/Inc/subdir.mk
@@ -57,34 +50,34 @@ $(wildcard ../makefile.init) \
 $(wildcard ../makefile.targets) \
 
 
-BUILD_ARTIFACT_NAME := ROS
+BUILD_ARTIFACT_NAME := MRProj_2_ROS
 BUILD_ARTIFACT_EXTENSION := elf
 BUILD_ARTIFACT_PREFIX :=
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ARTIFACT_EXTENSION),.$(BUILD_ARTIFACT_EXTENSION),)
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-ROS.elf \
+MRProj_2_ROS.elf \
 
 MAP_FILES += \
-ROS.map \
+MRProj_2_ROS.map \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-ROS.list \
+MRProj_2_ROS.list \
 
 
 # All Target
 all: main-build
 
 # Main-build Target
-main-build: ROS.elf secondary-outputs
+main-build: MRProj_2_ROS.elf secondary-outputs
 
 # Tool invocations
-ROS.elf ROS.map: $(OBJS) $(USER_OBJS) C:\ROS\ PROJEKT\SOFTWARE\STM\STM32F401RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-g++ -o "ROS.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\ROS PROJEKT\SOFTWARE\STM\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ROS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+MRProj_2_ROS.elf MRProj_2_ROS.map: $(OBJS) $(USER_OBJS) C:\Users\tim_g\OneDrive\Documents\FHGR\Semester\ 4\Mobiles\ Robotikprojekt\ 2\ROS\MRProj_2_ROS\MRProj_2_ROS\STM32F401RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-g++ -o "MRProj_2_ROS.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\tim_g\OneDrive\Documents\FHGR\Semester 4\Mobiles Robotikprojekt 2\ROS\MRProj_2_ROS\MRProj_2_ROS\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MRProj_2_ROS.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -93,14 +86,14 @@ default.size.stdout: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-ROS.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "ROS.list"
+MRProj_2_ROS.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "MRProj_2_ROS.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) ROS.elf ROS.list ROS.map default.size.stdout
+	-$(RM) MRProj_2_ROS.elf MRProj_2_ROS.list MRProj_2_ROS.map default.size.stdout
 	-@echo ' '
 
 secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)

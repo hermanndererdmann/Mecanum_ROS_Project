@@ -14,6 +14,7 @@ C_SRCS :=
 CPP_SRCS := 
 S_UPPER_SRCS := 
 O_SRCS := 
+CYCLO_FILES := 
 OBJDUMP_LIST := 
 C_UPPER_DEPS := 
 S_DEPS := 
@@ -34,12 +35,5 @@ SUBDIRS := \
 Core/Inc \
 Core/Src \
 Core/Startup \
-Drivers/BMI088/src \
-Drivers/ROS/Battery/src \
-Drivers/ROS/LED/src \
-Drivers/ROS/Motor\ Driver/src \
-Drivers/ROS/Orientation/src \
-Drivers/ROS/Status/src \
 Drivers/STM32F4xx_HAL_Driver/Src \
-Drivers/i2c_stm/src \
 
