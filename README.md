@@ -1,10 +1,10 @@
 # OmniSeek
 ## FHGR ROS PROJEKT
 ###Bedienungsanleitung
-- Luca Bargetzi				luca.bargetzi@stud.fhgr.ch
+- Luca Bargetzi				  luca.bargetzi@stud.fhgr.ch
 - Florian Büttiker			florian.büttiker@stud.fhgr.ch
-- Tim Germann				tim.germann@stud.fhgr.ch
-- Yannick Kohler			yannick.kohler@stud.fhgr.ch
+- Tim Germann				    tim.germann@stud.fhgr.ch
+- Yannick Kohler			  yannick.kohler@stud.fhgr.ch
 
 
 
