@@ -48,10 +48,15 @@ catkin_make
 ```
 source devel/setup.bash
 ```
-8. Launch the node with
+8. Run roscore in a seperate console
+```
+roscore
+```
+9. Launch the node with
 ```
 roslaunch ros_package_template ros_package_template.launch
 ```
+
 ### start rosserial 
 1. Find the right port
 ```
@@ -69,7 +74,7 @@ rosrun rosserial_python serial_node.py /dev/ttyACM0
 ```
 rosrun teleop_bridge joy_twist_bridge.py
 ```
-### start ps3joy
+### start ps3joy (~catkin_ws/src/ps3joy/src/joystick_drivers)
 ```
 roslaunch ps3joy ps3.launch
 ```
@@ -89,6 +94,21 @@ roslaunch freenect_launch freenect.launch
 The Setup for the video analysis on the pc:
 1. Install Ubuntu 20.04 (dualboot or directly)
 2. Install ROS
-3. 
 
+3. Run roscore in a seperate console
+```
+roscore
+```
+4. make
+```
+make -j`nproc`
+```
+### start Openpose script.py
+```
+roslaunch freenect_launch freenect.launch
+```
+### start Openpose script.py
+```
+roslaunch freenect_launch freenect.launch
+```
 
