@@ -39,9 +39,17 @@ cd src
 ```
 > ln -s ~/.../Mecanum_ROS_Project/Software/Rpi/ROS/ 
 ```
-6. Build the package with (while in the catkin_ws_ros folder)
+6. Build the package with: (while in the catkin_ws_ros folder)
 ```
 cd ..
 catkin_make
 ```
-8.  
+7. Re-source your workspace setup:
+```
+source devel/setup.bash
+```
+8. Launch the node with
+```
+roslaunch ros_package_template ros_package_template.launch
+```
+
