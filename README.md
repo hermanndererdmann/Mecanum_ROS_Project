@@ -1,7 +1,7 @@
 # OmniSeek
 In this manual for the OmniSeek robot, which was developed in the Mobile Robotics Project 2, at the University of Applied Sciences Grisogns, you will find all the information you need to install and start the program at your home via ROS.
 
-## Ersteller:
+## Creators:
 - Luca Bargetzi				  luca.bargetzi@stud.fhgr.ch
 - Florian Büttiker			florian.buettiker@stud.fhgr.ch
 - Tim Germann				    tim.germann@stud.fhgr.ch
