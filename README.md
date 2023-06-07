@@ -19,7 +19,7 @@ In this manual for the OmniSeek robot, which was developed in the Mobile Robotic
 -	3D printed chassis
 -	Custom PCB
 
-## get Rpi 4 ready
+## 1. get Rpi 4 ready
 
 1. install Ubuntu 20.04
 2. install ROS-Desktop: http://wiki.ros.org/noetic/Installation/Ubuntu
@@ -53,7 +53,7 @@ source devel/setup.bash
 roslaunch ros_package_template ros_package_template.launch
 ```
 
-## get the STM32 ready
+## 2. get the STM32 ready
 1. open the Project /Mecanum_ROS_Project/Software/STM/ROS/
 2. run the Project
 3. disconnect the cable from the pc
