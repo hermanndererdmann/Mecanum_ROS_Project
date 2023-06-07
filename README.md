@@ -69,7 +69,10 @@ rosrun rosserial_python serial_node.py /dev/ttyACM0
 ```
 rosrun teleop_bridge joy_twist_bridge.py
 ```
-
+### start ps3joy
+```
+roslaunch ps3joy ps3.launch
+``
 
 
 
