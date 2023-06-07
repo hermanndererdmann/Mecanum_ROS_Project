@@ -21,7 +21,11 @@ In dieser Bedienungsanleitung zum OmniSeek Roboter, welcher im Mobile Robotics P
 
 1. Ubuntu 20.04 installieren
 2. ROS installieren
-3. catkin Worspace erstellen
+3. Projekt vom github downloaden:
+```
+git clone https://github.com/hermanndererdmann/Mecanum_ROS_Project.git
+```
+4. catkin Worspace erstellen
 ```
 mkdir catkin_ws_ros
 ```
@@ -33,10 +37,8 @@ cd catkin_ws_ros
 ```
 mkdir src
 ```
-6. Projekt vom github downloaden:
-```
-git clone
-```
+6. 
+
 8. 
  
 
