@@ -35,7 +35,7 @@ cd catkin_ws_ros
 mkdir src
 cd src
 ```
-5. Symlink contents from git-folder Software/Rpi/ROS into catkin workspace/src
+5. Symlink contents from git-folder /Mecanum_ROS_Project/Software/Rpi/ROS into catkin_ws_ros/src
 ```
 > ln -s ~/.../Mecanum_ROS_Project/Software/Rpi/ROS/ 
 ```
@@ -52,4 +52,7 @@ source devel/setup.bash
 ```
 roslaunch ros_package_template ros_package_template.launch
 ```
+
 ## get the STM32 ready
+1. Open the Project /Mecanum_ROS_Project/Software/Rpi/ROS/
+
