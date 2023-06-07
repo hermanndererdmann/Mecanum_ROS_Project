@@ -52,4 +52,4 @@ source devel/setup.bash
 ```
 roslaunch ros_package_template ros_package_template.launch
 ```
-
+## get the STM32 ready
