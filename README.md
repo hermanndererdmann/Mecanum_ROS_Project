@@ -7,48 +7,33 @@ In dieser Bedienungsanleitung zum OmniSeek Roboter, welcher im Mobile Robotics P
 - Tim Germann				    tim.germann@stud.fhgr.ch
 - Yannick Kohler			  yannick.kohler@stud.fhgr.ch
 
-## Elektronik Komponenten Liste:
+## Component List
 -	Microcontroller:	1x Raspberry Pi 4 4GB
 -	Microcontroller:	1x STM32F401RE
 -	IMU:			1x BMI088 
 -	Magnetometer:	1x LIS3MDL
 -	Motorcontroller	2x Sparkfun Rob 14451
 -	Lidar:			1x RPLIDARA1
--	3D-Kamera:		1x Xbox 360 Kinect
+-	3D-Cam:		1x Xbox 360 Kinect
 -	Motor:			4x YFROBOT Motor
+-	3D printed chassis
+-	Custom PCB
 
-## Aufsetzten vom Raspberry Pi 4
+## get Rpi 4 ready
 
-1. Ubuntu 20.04 installieren
-2. ROS installieren
-3. Projekt vom github an beliebigen Ort downloaden:
+1. install Ubuntu 20.04
+2. install ROS-Desktop: http://wiki.ros.org/noetic/Installation/Ubuntu
+3. install libfreenect: https://aibegins.net/2020/11/22/give-your-next-robot-3d-vision-kinect-v1-with-ros-noetic/
+4. clone git:
 ```
 git clone https://github.com/hermanndererdmann/Mecanum_ROS_Project.git
 ```
-4. catkin Worspace erstellen 
+4. create catkin workspace 
 ```
 mkdir catkin_ws_ros
-```
-4. In erstellten Ordner gehen
-```
 cd catkin_ws_ros
-```
-5. src Ordner erstellen:
-```
 mkdir src
+cd src
 ```
-6. RPI Code verlinken:
-```
-mkdir src
-```
-
-8. 
- 
-
-
-
-
-
-
-
-
+5. copy contents from git-folder Software/Rpi/ROS into catkin workspace
+6. 
