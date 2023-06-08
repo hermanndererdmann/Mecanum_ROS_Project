@@ -65,7 +65,7 @@ dmesg | grep tty
 ```
 2. enable port (choose right port: ACMx)
 ```
-sudo chmod a+rw /dev/tty/ACM0
+sudo chmod 666 /dev/ttyACM0
 ```
 3. Start the serial_node.py (choose right port: ACMx)
 ```
