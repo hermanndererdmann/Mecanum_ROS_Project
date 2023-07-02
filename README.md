@@ -1,6 +1,6 @@
 # OmniSeek
 ![robot](https://github.com/hermanndererdmann/Mecanum_ROS_Project/assets/64459587/38fc09db-1e92-4c84-a349-d115479ea19b)
-In this manual for the OmniSeek robot, which was developed in the Mobile Robotics Project 2, at the University of Applied Sciences Grisogns, you will find all the information you need to install and start the program at your home via ROS.
+In this manual for the OmniSeek robot, which was developed in the Mobile Robotics Project 2, at the University of Applied Sciences Grisons, you will find all the information you need to install and start the program at your home via ROS.
 
 ## Creators:
 - Luca Bargetzi				  luca.bargetzi@stud.fhgr.ch
